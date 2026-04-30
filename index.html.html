@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Supplies</title>
+    <style>
+        .products {
+    padding: 50px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #0077b6;
+}
+
+.production-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #0077b6;
+}
+
+.about {
+    padding: 80px 50px;
+    background: #e9f5fb;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0077b6;
+}
+
+.contact {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0077b6;
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body { 
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: #0077b6;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;    
+        }
+        header h1 {
+            font-size: 2rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .hero {
+    background: linear-gradient(
+        rgba(0, 119, 182, 0.7),
+        rgba(0, 119, 182, 0.8)
+    ),
+    url('https://images.unsplash.com/photo-1581578731548-c64695cc6952')
+    center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00b4d8;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+footer {
+    background: #023e8a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+        </style>
+        </head>
+        <body>  
+            <header>
+                <h1>Clean Supplies</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="hero" id="home">
+                <h2>Welcome to Clean Supplies</h2>
+                <p>Your one-stop shop for all your cleaning needs. From eco-friendly products to powerful disinfectants, we have it all.</p>
+                <a href="#products" class="btn">Shop Now</a>
+            </section>
+            <section class="products" id="products">
+                <h2>Our Products</h2>
+                <div class="production-grid">
+                    <div class="product-card">
+                        <img src="images/Sunlight liquid.jpeg" alt="Sunlight Liquid bottle">
+                        <h3>Sunlight Liquid</h3>
+                        <p>A powerful cleaner made from natural ingredients. Safe for you and your dishes.</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/Thick Bleach.jpeg" alt="Bleach bottle">
+                        <h3>Disinfectant Thick Bleach</h3>
+                        <p>Kill 99.9% of germs with our fast-acting disinfectant bleach. Perfect for all surfaces.</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/Pine gel.jpeg" alt="Pine gel tub">
+                        <h3>Strong Pine-Gel</h3>
+                        <p>Convenient and effective pine-gel. Ideal for floors, bathrooms, and more.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <h2>Why choose Us</h2>
+                <p>We are a company dedicated to providing high-quality cleaning products that are safe for you and the environment, at a cheaper price.</p>
+            </section>
+            <section class="contact" id="contact">
+                <h2>Contact Us</h2>
+                <p>Email: saulssicelo@gmail.com</p>
+                <p>Phone: +27 66 462 9200/+27 60 164 0728</p>
+                <p>Address: 58 Lower Location, UMaszakhe, Robert Mangaliso Sobukwe, South Africa</p>
+            </section>
+            <footer>
+                <p>&copy; 2026 Clean Supplies. All rights reserved.</p>
+            </footer>
+        </body>
+    </html>
