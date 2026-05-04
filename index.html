@@ -45,10 +45,9 @@
 
 .product-card img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    height: 200px;
+    object-fit: contain; /* change from cover */
+    background: white;
 }
 
 .product-card h3 {
@@ -141,6 +140,27 @@
 .btn:hover {
     background: #0096c7;
 }
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 12px 25px;
+    background: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005f8a;
+}
         
 footer {
     background: #023e8a;
@@ -173,26 +193,42 @@ footer {
                     <div class="product-card">
                         <img src="images/Sunlight-liquid.jpeg" alt="Sunlight Liquid bottle">
                         <h3>Sunlight Liquid</h3>
-                        <p>A powerful cleaner made from natural ingredients. Safe for you and your dishes.</p>
+                        <p>Affordable, powerful cleaner trusted for everyday home use. Safe for you and your dishes.</p>
+                        <p><strong>R25</strong></p>
+                        <a href="#contact" class="btn">Order Now</a>
                     </div>
                     <div class="product-card">
                         <img src="images/Thick-Bleach.jpeg" alt="Bleach bottle">
                         <h3>Disinfectant Thick Bleach</h3>
                         <p>Kill 99.9% of germs with our fast-acting disinfectant bleach. Perfect for all surfaces.</p>
+                        <p><strong>R25</strong></p>
+                        <a href="#contact" class="btn">Order Now</a>
                     </div>
                     <div class="product-card">
                         <img src="images/Pine-gel.jpeg" alt="Pine gel tub">
                         <h3>Strong Pine-Gel</h3>
                         <p>Convenient and effective pine-gel. Ideal for floors, bathrooms, and more.</p>
+                        <p><strong>R25</strong></p>
+                        <a href="#contact" class="btn">Order Now</a>
                     </div>
                 </div>
             </section>
             <section class="about" id="about">
                 <h2>Why Choose Us</h2>
+                <ul>
+    <li>✔ Affordable prices</li>
+    <li>✔ Quality guaranteed</li>
+    <li>✔ Trusted by local customers</li>
+</ul>
                 <p>We are a company dedicated to providing high-quality cleaning products that are safe for you and the environment, at a cheaper price.</p>
             </section>
             <section class="contact" id="contact">
                 <h2>Contact Us</h2>
+             <a href="mailto:saulssicelo@gmail.com" class="btn">Email Us to Order</a>
+                <input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Your Message"></textarea>
+<button>Send</button>
                 <p>Email: saulssicelo@gmail.com</p>
                 <p>Phone: +27 66 462 9200/+27 60 164 0728</p>
                 <p>Address: 58 Lower Location, UMaszakhe, Robert Mangaliso Sobukwe, South Africa</p>
